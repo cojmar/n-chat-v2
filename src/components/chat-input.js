@@ -26,7 +26,7 @@ window.customElements.define('chat-input',
 					
 					cursor: pointer;
 				}
-				.send_button:hover {
+				send_button:hover {
 					background: var(--button-background-color-hover);
 					color: var(--button-text-color-hover);
 				}

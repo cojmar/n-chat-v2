@@ -23,14 +23,14 @@ window.customElements.define('chat-window',
 					font-size:var(--font-size);
 					float:left;
 					height:100%;
-					width:calc(20% - calc(var(--border-width) * 2)  );					
+					width:20%;
 					border:0px;					
 				}
 				.right{
 					font-size:var(--font-size);
 					float:left;
 					height:100%;
-					width:calc(20% - calc(var(--border-width) * 2)  );
+					width:20%;
 					border:0px;
 				}
 				.center{	
