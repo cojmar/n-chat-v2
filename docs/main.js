@@ -90,25 +90,7 @@ window.customElements.define('chat-output',
                     padding:2px;
                     width:calc(100% - 4px);
                 }
-                /* width */
-                ::-webkit-scrollbar {
-                    width: 10px;
-                }
-                
-                /* Track */
-                ::-webkit-scrollbar-track {
-                    background: #f1f1f1; 
-                }
-                    
-                /* Handle */
-                ::-webkit-scrollbar-thumb {
-                    background: #888; 
-                }
-                
-                /* Handle on hover */
-                ::-webkit-scrollbar-thumb:hover {
-                    background: #555; 
-                } 
+            
                 
             </style>
             <div class="container">
@@ -155,24 +137,54 @@ window.customElements.define('chat-window',
 					width:100%;					
 				}  
 				.output{
-					height: calc(100% - 30px - calc(var(--border-width) * 3) );				
-					width:calc(100% -  calc(var(--border-width) * 2) );						
-					
+					height: calc(100% - calc(var(--font-size) * 1)  - calc(var(--border-width) * 2)  );				
+					width:calc(100% -  calc(var(--border-width) * 2) );											
 					
 				}
 				.input{
 					width:calc(100% -  calc(var(--border-width) * 2) );						
-					border-top:0px;
-					
+					border-top:0px;					
 				}
+				.left{
+					float:left;
+					height:100%;
+					width:calc(20% - calc(var(--border-width) * 2)  );
+					border:0px;					
+				}
+				.right{
+					float:left;
+					height:100%;
+					width:calc(20% - calc(var(--border-width) * 2)  );
+					border:0px;
+				}
+				.center{
+					float:left;
+					height:calc(100% - var(--font-size)  );
+					width:calc(60% - calc( var(--border-width) * 2)  );
+					border:0px;
+					
+
+				}
+
             </style>
-			<div class="container">
-				<div class="chat-panel output">    
-					<chat-output></chat-output>   
-				</div>        
-				<div class="chat-panel input">    
-					<chat-input></chat-input>   
-				</div>        
+			<div class="chat-panel container">
+				<div class="chat-panel left">
+					left
+				</div>
+
+				<div class="chat-panel center">
+					<div class="chat-panel output">    
+						<chat-output></chat-output>   
+					</div>        
+					<div class="chat-panel input">    
+						<chat-input></chat-input>   
+					</div> 
+				</div>
+
+				<div class="chat-panel right">
+					right
+				</div>
+
 			</div>
             
             `
