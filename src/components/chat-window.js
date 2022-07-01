@@ -9,8 +9,9 @@ window.customElements.define('chat-window',
 					width:100%;					
 				}  
 				.output{
-					height: calc(100% - calc(var(--font-size) * 1)  - calc(var(--border-width) * 2)  );				
-					width:calc(100% -  calc(var(--border-width) * 2) );											
+					height: calc(100% - calc(var(--font-size) * 1)  - calc(var(--border-width) )  );				
+					width:calc(100% -  calc(var(--border-width) * 2) );			
+					border-top:0px;								
 					
 				}
 				.input{
@@ -18,18 +19,21 @@ window.customElements.define('chat-window',
 					border-top:0px;					
 				}
 				.left{
+					font-size:var(--font-size);
 					float:left;
 					height:100%;
-					width:calc(20% - calc(var(--border-width) * 2)  );
+					width:calc(20% - calc(var(--border-width) * 2)  );					
 					border:0px;					
 				}
 				.right{
+					font-size:var(--font-size);
 					float:left;
 					height:100%;
 					width:calc(20% - calc(var(--border-width) * 2)  );
 					border:0px;
 				}
-				.center{
+				.center{	
+					font-size:var(--font-size);				
 					float:left;
 					height:calc(100% - var(--font-size)  );
 					width:calc(60% - calc( var(--border-width) * 2)  );
