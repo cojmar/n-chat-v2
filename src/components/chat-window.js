@@ -6,7 +6,8 @@ window.customElements.define('chat-window',
             <style>
                 .container{					
 					height:100%;
-					width:100%;					
+					width:100%;
+					overflow:hidden;					
 				}  
 				.output{
 					height: calc(100% - calc(var(--font-size) * 1)  - calc(var(--border-width) )  );				
@@ -38,8 +39,6 @@ window.customElements.define('chat-window',
 					height:calc(100% - var(--font-size)  );
 					width:calc(60% - calc( var(--border-width) * 2)  );
 					border:0px;
-					
-
 				}
 
             </style>
