@@ -1,0 +1,27 @@
+:root {
+    --background-color: #3c3c3c;
+    --border-color: black;
+    --text-color: #cccccc;
+
+    --button-background-color: rgba(34, 33, 33, 0.418);
+    --button-background-color-hover: rgba(34, 33, 33, 0.815);
+    --button-text-color: #cccccc71;
+    --button-text-color-hover: #cccccc;
+
+
+    --font-size: 16px;
+    --border-width: 2px;
+}
+
+.chat-panel {
+    width: 100%;
+    min-height: 25px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: var(--border-width) solid var(--border-color);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
