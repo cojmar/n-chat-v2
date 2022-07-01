@@ -37,7 +37,7 @@ window.customElements.define('chat-window',
 					font-size:var(--font-size);				
 					float:left;
 					height:calc(100% - var(--font-size)  );
-					width:calc(60% - calc( var(--border-width) * 2)  );
+					width:60%;
 					border:0px;
 				}
 
